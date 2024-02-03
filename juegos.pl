@@ -1,0 +1,288 @@
+#resultado final
+juego().
+juego().
+juego().
+juego().
+juego().
+juego().
+juego().
+
+#tipo de consola...
+consola(pc,"PC").
+consola(play, "Play Station").
+consola(xbox,"Xbox").
+consola(de_mesa,"Juegos de mesa o de cartas").
+consola(movil,"Celular").
+consola(n_switch,"Nintendo Switch").
+
+
+#Multiplayers
+genero(multiplayer, "Minecraft").
+genero(multiplayer, "Age of Empires").
+genero(multiplayer, "Among Us").
+genero(multiplayer, "Fall Guys").
+genero(multiplayer, "Fortnite").
+genero(multiplayer, "Valorant").
+genero(multiplayer, "Call of Duty").
+genero(multiplayer, "League of Legends").
+genero(multiplayer, "Counter Strike").
+genero(multiplayer, "Phasmophobia").
+genero(multiplayer, "Escape the Backrooms").
+genero(multiplayer, "Star Wars Battlefront").
+genero(multiplayer, "Truco").
+genero(multiplayer, "ChinChon").
+genero(multiplayer, "Poker").
+genero(multiplayer, "Blackjack").
+genero(multiplayer, "Uno").
+genero(multiplayer, "Ajedrez").
+genero(multiplayer, "Teg").
+genero(multiplayer, "Catan").
+genero(multiplayer, "Clue").
+genero(multiplayer, "Monopoly").
+genero(multiplayer, "Tuttifrutti").
+genero(multiplayer, "Dragon Ball Cards").
+genero(multiplayer, "Clash Royale").
+genero(multiplayer, "Clash of Clans").
+
+#Accion
+genero(accion,"Mortal Kombat").
+genero(accion,"Fortnite").
+genero(accion,"Minecraft").
+genero(accion,"Valorant").
+genero(accion,"Call of Duty"). 
+genero(accion,"Clash of Clans"). 
+genero(accion,"Clash Royale"). 
+
+
+#Aventura
+genero(aventura, "Minecraft").
+genero(aventura, "Hogwarts Legacy").
+genero(aventura, "Star Wars Battlefront")
+genero(aventura, "Uncarted").
+genero(aventura, "The Last of Us").
+genero(aventura, "Tomb Raider").
+genero(aventura, "Assasins Creed").
+genero(aventura, "God of War").
+genero(aventura, "Far Cry").
+genero(aventura, "Legend of Zelda").
+
+
+
+#Estrategia
+genero(estrategia, "Age of Empires").
+genero(estrategia, "Among Us").
+genero(estrategia, "Ace Attorney").
+genero(estrategia, "Teg").
+genero(estrategia, "Catan").
+genero(estrategia, "Clue").
+genero(estrategia, "Monopoly").
+genero(estrategia, "Tuttifrutti").
+genero(estrategia, "Ajedrez").
+genero(estrategia, "Solitario").
+genero(estrategia, "Yu Gi Oh").
+genero(estrategia, "Dragon Ball Cards").
+genero(estrategia, "Pokemon").
+genero(estrategia, "Blackjack").
+genero(estrategia, "Poker").
+genero(estrategia, "Clash of Clans").
+genero(estrategia, "Clash Royale").
+
+
+
+#Con historia
+genero(con_historia,"Hogwarts Legacy"). 
+genero(con_historia,"Ace Attorney"). 
+genero(con_historia,"What Remains of Edith Finch"). 
+genero(con_historia,"Uncharted"). 
+genero(con_historia,"The Last of Us"). 
+genero(con_historia,"Starwars Battlefront"). 
+genero(con_historia,"7 days"). 
+genero(con_historia,"Underworld office"). 
+genero(con_historia,"Zelda").
+
+
+
+#Supervivencia
+genero(supervivencia,"Minecraft").
+genero(supervivencia,"Pumpkin panic").
+genero(supervivencia,"No man’s sky").
+genero(supervivencia,"60 seconds").
+genero(supervivencia,"Starwars Battlefront").
+
+
+
+#RPG
+genero(rpg, "Euro Truck Simulator").
+genero(rpg, "Goat Simulator").
+genero(rpg, "Among Us").
+genero(rpg, "Hogwarts Legacy").
+genero(rpg, "Stardew Valley").
+genero(rpg, "Genshin Impact").
+
+
+
+#deportes
+genero(deportes,"Fórmula 1").
+genero(deportes,"FIFA").
+genero(deportes,"Just Dance").
+genero(deportes,"Fight night Champion").
+genero(deportes,"NBA 2k24").
+genero(deportes,"Dream League Soccer 2").
+
+
+
+#Plataformers
+genero(platformers,"Super Mario").
+genero(plataformers,"Sonic").
+genero(plataformers,"Crash Bandicoot").
+genero(plataformers, "Fall Guys").
+genero(plataformers, "Mario Bros").
+genero(plataformers, "Mario Kart").
+
+
+
+#De terror
+genero(terror,"Backrooms").
+genero(terror,"Phasmaphobia").
+genero(terror,"FNAF").
+genero(terror,"Pumpkin panic").
+genero(terror,"The Last of Us").
+genero(terror,"Granny").
+
+
+
+#Categorias Consola
+#PC
+consola(pc, "Minecraft").
+consola(pc, "Age of Empires").
+consola(pc, "Among Us").
+consola(pc, "Fall Guys").
+consola(pc, "Fortnite").
+consola(pc, "Valorant").
+consola(pc, "Call of Duty").
+consola(pc, "League of Legends").
+consola(pc, "Mortal Kombat").
+consola(pc, "Ace Attorney").
+consola(pc, "What Remains of Edith Finch").
+consola(pc, "Pumpkin Panic").
+consola(pc, "No Man's Sky").
+consola(pc, "60 seconds").
+consola(pc, "Euro Truck Simulator").
+consola(pc, "Goat Simulator").
+consola(pc, "Stardew Valley").
+consola(pc, "Formula 1").
+consola(pc, "FIFA").
+consola(pc, "Backrooms").l
+consola(pc, "Phasmaphobia").
+consola(pc, "FNAF").
+
+
+
+#PS
+consola(play,"Starwars Battlefront").
+consola(play,"Fall Guys").
+consola(play,"Fortnite").
+consola(play,"Call of Duty").
+consola(play,"Mortal Kombat").
+consola(play,"Uncharted").
+consola(play,"Hogwarts Legacy").
+consola(play,"Among Us").
+consola(play,"Ace Attorney").
+consola(play,"What Remains of Edith Finch").
+consola(play,"Genshin Impact").
+consola(play,"FIFA").
+consola(play,"Just Dance").
+consola(play,"Fight night Champion").
+consola(play,"NBA 2k24").
+consola(play,"Formula 1").
+consola(play,"The Last of Us").
+
+
+
+
+#XBOX
+
+
+
+#Juegos de mesa o de cartas
+
+
+
+
+#Mobile
+
+
+
+
+#SWITCH
+
+
+
+#categorias de preguntas
+caracteristica(estilo).
+caracteristica(mentalidad).
+caracteristica(factorSorpresa).
+caracteristica(expresion).
+caracteristica(consola).
+
+
+#preguntas
+pregunta(estilo, "Qué tipo de jug").
+pregunta(mentalidad, "Le dedicas mucho tiempo a jugar?").
+pregunta(consola,"Qué plataforma preferis para jugar?").
+pregunta(factorSorpresa, "Al explorar, te encuentras con un enemigo, qué es lo primero que haces? ").
+pregunta(expresion, "A la hora de jugar, qué tan comunicativo sos?").
+
+
+#Estilo de Juego
+estilo(supervivencia, "").
+estilo(accion, "").
+estilo(multiplayer, ""). 
+estilo(estrategia, ""). 
+estilo(con_historia, "").
+estilo(aventura, "").
+estilo(rpg, "").
+estilo(deportes, "").
+estilo(plataformer, "").
+estilo(terror, "").
+
+
+#Mentalidad al Jugar
+mentalidad(supervivencia, "Unicamente en las noches").
+mentalidad(accion, "Me hago el tiempo como sea").
+mentalidad(multiplayer,"Me hago el tiempo como sea"). 
+mentalidad(estrategia,"Me hago el tiempo como sea"). 
+mentalidad(con_historia, "Solo si estoy muy aburrido").
+mentalidad(aventura, "Tengo mi momento al año donde vicio todos los días").
+mentalidad(rpg, "Tengo mi momento al año donde vicio todos los días").
+mentalidad(deportes, "Unicamente en las noches").
+mentalidad(plataformer, "Solo si estoy muy aburrido").
+mentalidad(terror, "Solo en las noches").
+
+
+#Factor de Sorpresa
+factorSorpresa(supervivencia, "Me retiro a un lugar escondido y espero a que asome el enemigo").
+factorSorpresa(accion, "No le doy oportunidad a pensar y ataco").
+factorSorpresa(multiplayer,"Pido ayuda a mi equipo/Lo derroto con mi equipo").
+factorSorpresa(estrategia,"Pido ayuda a mi equipo/Lo derroto con mi equipo").
+factorSorpresa(con_historia, "Cambio de ruta y me dirijo por otro camino").
+factorSorpresa(aventura, "Cambio de ruta y me dirijo por otro camino").
+factorSorpresa(rpg, "Cambio de ruta y me dirijo por otro camino").
+factorSorpresa(simulacion, "Cambio de ruta y me dirijo por otro camino").
+factorSorpresa(deportes, "Pido ayuda a mi equipo/Lo derroto con mi equipo").
+factorSorpresa(plataformer, "No le doy oportunidad a pensar y ataco").
+factorSorpresa(terror,"Me retiro a un lugar escondido y espero a que asome el enemigo").
+
+
+#Expresion
+expresion(supervivencia, "Solo por chat de texto").
+expresion(accion, "Comunico todo movimiento a mi equipo").
+expresion(multiplayer, "Comunico todo movimiento a mi equipo").
+expresion(estrategia, "Comunico todo movimiento a mi equipo").
+expresion(con_historia, "Prefiero no hablar mucho").
+expresion(aventura, "Prefiero no hablar mucho").
+expresion(rpg, "Comunico todo movimiento a mi equipo").
+expresion(simulacion, "Prefiero no hablar mucho").
+expresion(deportes, "Comunico todo movimiento a mi equipo").
+expresion(plataformer, "Prefiero no hablar mucho").
+expresion(terror, "Solo por chat de texto").
