@@ -12,7 +12,7 @@ consola(pc,"PC").
 consola(play, "Play Station").
 consola(xbox,"Xbox").
 consola(de_mesa,"Juegos de mesa o de cartas").
-consola(movil,"Celular").
+consola(movil,"Celular o tablet").
 consola(n_switch,"Nintendo Switch").
 
 
@@ -196,26 +196,69 @@ consola(play,"Fight night Champion").
 consola(play,"NBA 2k24").
 consola(play,"Formula 1").
 consola(play,"The Last of Us").
-
-
+consola(play,"No man's sky").
 
 
 #XBOX
-
+consola(xbox,"Fall Guys").
+consola(xbox,"Fortnite").
+consola(xbox,"Hogwarts Legacy").
+consola(xbox,"Among Us").
+consola(xbox,"Ace Attorney").
+consola(xbox,"What Remains of Edith Finch").
+consola(xbox,"Minecraft").
+consola(xbox,"No man’s sky").
+consola(xbox,"FIFA").
+consola(xbox,"Just Dance").
+consola(xbox,"Formula 1").
+consola(xbox,"NBA 2k24").
 
 
 #Juegos de mesa o de cartas
-
-
+consola(de_mesa,"Truco").
+consola(de_mesa,"Chin-chon").
+consola(de_mesa,"Poker").
+consola(de_mesa,"Uno").
+consola(de_mesa,"Monopoly").
+consola(de_mesa,"Tutti-frutti").
+consola(de_mesa,"Ajedrez").
+consola(de_mesa,"Teg").
+consola(de_mesa,"Catan").
+consola(de_mesa,"Clue").
+consola(de_mesa,"Dragon Ball cards").
+consola(de_mesa,"Solitario").
+consola(de_mesa,"Yu Gi Oh").
+consola(de_mesa,"Pokemon").
 
 
 #Mobile
-
-
-
+consola(movil,"Among Us").
+consola(movil,"Fall Guys").
+consola(movil,"Fortnite").
+consola(movil,"Clash of Clans").
+consola(movil,"Clash Royale").
+consola(movil,"Ace Attorney").
+consola(movil,"7 days").
+consola(movil,"Underworld office").
+consola(movil,"Minecraft").
+consola(movil,"Pumpkin panic").
+consola(movil,"Genshin Impact").
+consola(movil,"FIFA").
+consola(movil,"Dream League Soccer 2").
+consola(movil,"Granny").
 
 #SWITCH
-
+consola(n_switch,"Fall Guys").
+consola(n_switch,"Fortnite").
+consola(n_switch,"Hogwarts Legacy").
+consola(n_switch,"Zelda").
+consola(n_switch,"Among Us").
+consola(n_switch,"Ace Attorney").
+consola(n_switch,"Minecraft").
+consola(n_switch,"FIFA").
+consola(n_switch,"NBA 2k24").
+consola(n_switch,"FIFA").
+consola(n_switch,"FIFA").
 
 
 #categorias de preguntas
