@@ -1,4 +1,4 @@
-#resultado final
+%resultado final
 juego().
 juego().
 juego().
@@ -7,7 +7,7 @@ juego().
 juego().
 juego().
 
-#tipo de consola...
+%tipo de consola...
 consola(pc,"PC").
 consola(play, "Play Station").
 consola(xbox,"Xbox").
@@ -16,7 +16,7 @@ consola(movil,"Celular o tablet").
 consola(n_switch,"Nintendo Switch").
 
 
-#Multiplayers
+%Multiplayers
 genero(multiplayer, "Minecraft").
 genero(multiplayer, "Age of Empires").
 genero(multiplayer, "Among Us").
@@ -44,7 +44,7 @@ genero(multiplayer, "Dragon Ball Cards").
 genero(multiplayer, "Clash Royale").
 genero(multiplayer, "Clash of Clans").
 
-#Accion
+%Accion
 genero(accion,"Mortal Kombat").
 genero(accion,"Fortnite").
 genero(accion,"Minecraft").
@@ -54,10 +54,10 @@ genero(accion,"Clash of Clans").
 genero(accion,"Clash Royale"). 
 
 
-#Aventura
+%Aventura
 genero(aventura, "Minecraft").
 genero(aventura, "Hogwarts Legacy").
-genero(aventura, "Star Wars Battlefront")
+genero(aventura, "Star Wars Battlefront").
 genero(aventura, "Uncarted").
 genero(aventura, "The Last of Us").
 genero(aventura, "Tomb Raider").
@@ -68,7 +68,7 @@ genero(aventura, "Legend of Zelda").
 
 
 
-#Estrategia
+%Estrategia
 genero(estrategia, "Age of Empires").
 genero(estrategia, "Among Us").
 genero(estrategia, "Ace Attorney").
@@ -89,7 +89,7 @@ genero(estrategia, "Clash Royale").
 
 
 
-#Con historia
+%Con historia
 genero(con_historia,"Hogwarts Legacy"). 
 genero(con_historia,"Ace Attorney"). 
 genero(con_historia,"What Remains of Edith Finch"). 
@@ -102,7 +102,7 @@ genero(con_historia,"Zelda").
 
 
 
-#Supervivencia
+%Supervivencia
 genero(supervivencia,"Minecraft").
 genero(supervivencia,"Pumpkin panic").
 genero(supervivencia,"No man’s sky").
@@ -111,7 +111,7 @@ genero(supervivencia,"Starwars Battlefront").
 
 
 
-#RPG
+%RPG
 genero(rpg, "Euro Truck Simulator").
 genero(rpg, "Goat Simulator").
 genero(rpg, "Among Us").
@@ -121,7 +121,7 @@ genero(rpg, "Genshin Impact").
 
 
 
-#deportes
+%deportes
 genero(deportes,"Fórmula 1").
 genero(deportes,"FIFA").
 genero(deportes,"Just Dance").
@@ -131,7 +131,7 @@ genero(deportes,"Dream League Soccer 2").
 
 
 
-#Plataformers
+%Plataformers
 genero(platformers,"Super Mario").
 genero(plataformers,"Sonic").
 genero(plataformers,"Crash Bandicoot").
@@ -141,7 +141,7 @@ genero(plataformers, "Mario Kart").
 
 
 
-#De terror
+%De terror
 genero(terror,"Backrooms").
 genero(terror,"Phasmaphobia").
 genero(terror,"FNAF").
@@ -151,8 +151,8 @@ genero(terror,"Granny").
 
 
 
-#Categorias Consola
-#PC
+%Categorias Consola
+%PC
 consola(pc, "Minecraft").
 consola(pc, "Age of Empires").
 consola(pc, "Among Us").
@@ -172,13 +172,13 @@ consola(pc, "Goat Simulator").
 consola(pc, "Stardew Valley").
 consola(pc, "Formula 1").
 consola(pc, "FIFA").
-consola(pc, "Backrooms").l
+consola(pc, "Backrooms").
 consola(pc, "Phasmaphobia").
 consola(pc, "FNAF").
 
 
 
-#PS
+%PS
 consola(play,"Starwars Battlefront").
 consola(play,"Fall Guys").
 consola(play,"Fortnite").
@@ -196,10 +196,10 @@ consola(play,"Fight night Champion").
 consola(play,"NBA 2k24").
 consola(play,"Formula 1").
 consola(play,"The Last of Us").
-consola(play,"No man's sky").
+consola(play,"No Man's Sky").
 
 
-#XBOX
+%XBOX
 consola(xbox,"Fall Guys").
 consola(xbox,"Fortnite").
 consola(xbox,"Hogwarts Legacy").
@@ -207,14 +207,14 @@ consola(xbox,"Among Us").
 consola(xbox,"Ace Attorney").
 consola(xbox,"What Remains of Edith Finch").
 consola(xbox,"Minecraft").
-consola(xbox,"No man’s sky").
+consola(xbox,"No Man’s Sky").
 consola(xbox,"FIFA").
 consola(xbox,"Just Dance").
 consola(xbox,"Formula 1").
 consola(xbox,"NBA 2k24").
 
 
-#Juegos de mesa o de cartas
+%Juegos de mesa o de cartas
 consola(de_mesa,"Truco").
 consola(de_mesa,"Chin-chon").
 consola(de_mesa,"Poker").
@@ -231,7 +231,7 @@ consola(de_mesa,"Yu Gi Oh").
 consola(de_mesa,"Pokemon").
 
 
-#Mobile
+%Mobile
 consola(movil,"Among Us").
 consola(movil,"Fall Guys").
 consola(movil,"Fortnite").
@@ -247,7 +247,7 @@ consola(movil,"FIFA").
 consola(movil,"Dream League Soccer 2").
 consola(movil,"Granny").
 
-#SWITCH
+%SWITCH
 consola(n_switch,"Fall Guys").
 consola(n_switch,"Fortnite").
 consola(n_switch,"Hogwarts Legacy").
@@ -257,11 +257,10 @@ consola(n_switch,"Ace Attorney").
 consola(n_switch,"Minecraft").
 consola(n_switch,"FIFA").
 consola(n_switch,"NBA 2k24").
-consola(n_switch,"FIFA").
-consola(n_switch,"FIFA").
+consola(n_switch,"Mario Bros").
 
 
-#categorias de preguntas
+%categorias de preguntas
 caracteristica(estilo).
 caracteristica(mentalidad).
 caracteristica(factorSorpresa).
@@ -269,7 +268,7 @@ caracteristica(expresion).
 caracteristica(consola).
 
 
-#preguntas
+%preguntas
 pregunta(estilo, "Qué tipo de jug").
 pregunta(mentalidad, "Le dedicas mucho tiempo a jugar?").
 pregunta(consola,"Qué plataforma preferis para jugar?").
@@ -277,7 +276,7 @@ pregunta(factorSorpresa, "Al explorar, te encuentras con un enemigo, qué es lo 
 pregunta(expresion, "A la hora de jugar, qué tan comunicativo sos?").
 
 
-#Estilo de Juego
+%Estilo de Juego
 estilo(supervivencia, "").
 estilo(accion, "").
 estilo(multiplayer, ""). 
@@ -290,7 +289,7 @@ estilo(plataformer, "").
 estilo(terror, "").
 
 
-#Mentalidad al Jugar
+%Mentalidad al Jugar
 mentalidad(supervivencia, "Unicamente en las noches").
 mentalidad(accion, "Me hago el tiempo como sea").
 mentalidad(multiplayer,"Me hago el tiempo como sea"). 
@@ -303,7 +302,7 @@ mentalidad(plataformer, "Solo si estoy muy aburrido").
 mentalidad(terror, "Solo en las noches").
 
 
-#Factor de Sorpresa
+%Factor de Sorpresa
 factorSorpresa(supervivencia, "Me retiro a un lugar escondido y espero a que asome el enemigo").
 factorSorpresa(accion, "No le doy oportunidad a pensar y ataco").
 factorSorpresa(multiplayer,"Pido ayuda a mi equipo/Lo derroto con mi equipo").
@@ -317,7 +316,7 @@ factorSorpresa(plataformer, "No le doy oportunidad a pensar y ataco").
 factorSorpresa(terror,"Me retiro a un lugar escondido y espero a que asome el enemigo").
 
 
-#Expresion
+%Expresion
 expresion(supervivencia, "Solo por chat de texto").
 expresion(accion, "Comunico todo movimiento a mi equipo").
 expresion(multiplayer, "Comunico todo movimiento a mi equipo").
