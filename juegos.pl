@@ -261,7 +261,6 @@ consola(n_switch,"Mario Bros").
 
 
 %categorias de preguntas
-caracteristica(estilo).
 caracteristica(mentalidad).
 caracteristica(factorSorpresa).
 caracteristica(expresion).
@@ -269,25 +268,10 @@ caracteristica(consola).
 
 
 %preguntas
-pregunta(estilo, "Qué tipo de jug").
 pregunta(mentalidad, "Le dedicas mucho tiempo a jugar?").
-pregunta(consola,"Qué plataforma preferis para jugar?").
-pregunta(factorSorpresa, "Al explorar, te encuentras con un enemigo, qué es lo primero que haces? ").
-pregunta(expresion, "A la hora de jugar, qué tan comunicativo sos?").
-
-
-%Estilo de Juego
-estilo(supervivencia, "").
-estilo(accion, "").
-estilo(multiplayer, ""). 
-estilo(estrategia, ""). 
-estilo(con_historia, "").
-estilo(aventura, "").
-estilo(rpg, "").
-estilo(deportes, "").
-estilo(plataformer, "").
-estilo(terror, "").
-
+pregunta(consola,"Que plataforma preferis para jugar?").
+pregunta(factorSorpresa, "Al explorar, te encuentras con un enemigo, que es lo primero que haces? ").
+pregunta(expresion, "A la hora de jugar, que tan comunicativo sos?").
 
 %Mentalidad al Jugar
 mentalidad(supervivencia, "Unicamente en las noches").
@@ -295,8 +279,8 @@ mentalidad(accion, "Me hago el tiempo como sea").
 mentalidad(multiplayer,"Me hago el tiempo como sea"). 
 mentalidad(estrategia,"Me hago el tiempo como sea"). 
 mentalidad(con_historia, "Solo si estoy muy aburrido").
-mentalidad(aventura, "Tengo mi momento al año donde vicio todos los días").
-mentalidad(rpg, "Tengo mi momento al año donde vicio todos los días").
+mentalidad(aventura, "Tengo mi momento anual donde vicio todos los días").
+mentalidad(rpg, "Tengo mi momento anual donde vicio todos los días").
 mentalidad(deportes, "Unicamente en las noches").
 mentalidad(plataformer, "Solo si estoy muy aburrido").
 mentalidad(terror, "Solo en las noches").
