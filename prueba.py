@@ -85,8 +85,6 @@ def mostrar_resultado(respuestas):
     print(respuestas)
 
 
-
-
 def mostrar_preguntas(categorias,pl,respuestas,i,cant):  #recursividad indirecta + clausuras -> revisar!!!!
     
     def listbox(opciones,respuestas):
@@ -111,6 +109,7 @@ def mostrar_preguntas(categorias,pl,respuestas,i,cant):  #recursividad indirecta
                 for w in widgets:
                     w.destroy()
                 mostrar_preguntas(categorias,pl,respuestas,i+1,cant)
+
         enviar=ttk.Button(frm,text="Enviar",command=send)
         enviar.pack(pady=100)
         widgets.append(enviar)
@@ -133,6 +132,7 @@ def mostrar_preguntas(categorias,pl,respuestas,i,cant):  #recursividad indirecta
                 for w in widgets:
                     w.destroy()
                 mostrar_preguntas(categorias,pl,respuestas,i+1,cant)
+
         boton_enviar = ttk.Button(root, text="Enviar", command=enviar_respuesta)
         boton_enviar.pack(anchor=tk.W,padx=80,pady=10)
         widgets.append(boton_enviar)
@@ -155,7 +155,7 @@ def mostrar_preguntas(categorias,pl,respuestas,i,cant):  #recursividad indirecta
             radiobuttons(opciones,respuestas)
 
 
-    else:   
+    else:    #finalizar cuestionario
         mostrar_resultado(respuestas)
 
 def inicio():
@@ -179,11 +179,6 @@ texto1=ttk.Label(frm, text="GamerBot")  #titulo
 texto1.pack(pady=10) 
 boton=ttk.Button(frm, text="Iniciar cuestionario", command=inicio) #boton de inicio
 boton.place(x=150, y=300)  #necesita una referencia (anchor), por omisión esquina superior izq. Mide en pixels
-
-
-
-
-
 
 
 def on_closing():
