@@ -49,7 +49,21 @@ def consultaANY(relacion,pl): #por si acaso
         res.append(final)
     return res
 
+def consultaUnica(relacion,pl):   #relacion(X)
+    query=relacion + "(X)"
+    res_query=list(pl.query(query))
+    res=[]
+    for item in res_query:
+        final=bytes_a_string(item["X"])
+        res.append(final)
+    return res
 
+def eliminar_repetidos(lista):
+    nueva=[]
+    for item in lista:
+        if item not in nueva:
+            nueva.append(item)
+    return nueva
 
 
 def main():
@@ -66,62 +80,110 @@ def main():
 
 
 #main()
-    
 
-def mostrar_preguntas(root, preguntas):
-    respuestas=[]
-    for pregunta in preguntas:
-        opciones=consultaX(pregunta,"_",pl)
+def mostrar_resultado(respuestas):
+    print(respuestas)
+
+
+
+
+def mostrar_preguntas(categorias,pl,respuestas,i,cant):  #recursividad indirecta + clausuras -> revisar!!!!
+    
+    def listbox(opciones,respuestas):
+        rsp=[]
+        l=ttk.Label(root,text="Selecciona una o varias opciones")
+        l.place(x=150,y=70)
+        widgets.append(l)
+        list = tk.Listbox(root, selectmode = "multiple") 
+        list.pack(expand = "YES", fill = "x")  
+        widgets.append(list)  
+        list.insert(tk.END, *opciones) 
+
+        def send():
+            indices = list.curselection()
+            if len(indices)==0:
+                messagebox.showerror("Error", "Debes seleccionar al menos una opción.")
+            else:
+                l.destroy()
+                for index in indices:
+                    rsp.append(list.get(index))
+                respuestas.append(rsp)
+                for w in widgets:
+                    w.destroy()
+                mostrar_preguntas(categorias,pl,respuestas,i+1,cant)
+        enviar=ttk.Button(frm,text="Enviar",command=send)
+        enviar.pack(pady=100)
+        widgets.append(enviar)
+        
         
 
-        #mostrar las opciones
+    def radiobuttons(opciones,respuestas): 
+        respuesta = tk.StringVar()
+        for opcion in opciones:
+                radio_button = ttk.Radiobutton(root, text=opcion, variable=respuesta, value=opcion)
+                radio_button.pack(anchor=tk.W, padx=70)
+                widgets.append(radio_button)
 
-        #guardar la seleccion
-        respuestas.append()
-    return respuestas
+        def enviar_respuesta():
+            if respuesta.get() == "":
+                messagebox.showerror("Error", "Debes seleccionar una opción.")
+            else:
+                respuestas.append(respuesta.get())
+                
+                for w in widgets:
+                    w.destroy()
+                mostrar_preguntas(categorias,pl,respuestas,i+1,cant)
+        boton_enviar = ttk.Button(root, text="Enviar", command=enviar_respuesta)
+        boton_enviar.pack(anchor=tk.W,padx=80,pady=10)
+        widgets.append(boton_enviar)
 
 
+    if i<cant:
+        widgets=[]
+        pregunta=consultaX("pregunta",categorias[i],pl)
+        l1=ttk.Label(root,text="Pregunta "+str(i+1)+" de "+str(cant))
+        l1.place(x=50,y=10)
+        l2=ttk.Label(root,text=pregunta)
+        l2.place(x=50,y=30)
+        widgets.append(l1)
+        widgets.append(l2)
+        opciones=eliminar_repetidos(consultaX(categorias[i],"_",pl))
+        
+        if (i==0):   #hagamos que la pregunta de consola sea la 1era
+            listbox(opciones,respuestas)
+        else:
+            radiobuttons(opciones,respuestas)
+
+
+    else:   
+        mostrar_resultado(respuestas)
+
+def inicio():
+    pl = Prolog()
+    pl.consult("juegos.pl")
+    categorias=consultaUnica("caracteristica",pl)  
+    respuestas=[]
+    cant=len(categorias)
+    boton.destroy()  
+    texto1.destroy()
+    mostrar_preguntas(categorias,pl,respuestas,0,cant)
+     
+     
 
 root = tk.Tk()
 root.title("Cuestionario") 
-root.geometry('400x350')   #tamaño de la ventana (anchoXalto)
+root.geometry('500x500')   #tamaño de la ventana (anchoXalto)
 frm = ttk.Frame(root)   
 frm.pack(fill=tk.BOTH, expand=True) 
-#frm.grid()
 texto1=ttk.Label(frm, text="GamerBot")  #titulo
 texto1.pack(pady=10) 
-boton=ttk.Button(frm, text="Iniciar cuestionario", command=root.destroy) #boton de inicio
-boton.place(x=0, y=0)  #otra alternativa a grid. Necesita una referencia (anchor), por omisión esquina superior izq. Mide en pixels
+boton=ttk.Button(frm, text="Iniciar cuestionario", command=inicio) #boton de inicio
+boton.place(x=150, y=300)  #necesita una referencia (anchor), por omisión esquina superior izq. Mide en pixels
 
 
 
 
-def listbox(root,opciones):
-    respuestas=[]
-    list = tk.Listbox(root, selectmode = "multiple") 
-    list.pack(expand = "YES", fill = "both") 
-    for each_item in range(len(opciones)): 
-        list.insert("end", opciones[each_item]) 
 
-    #append las respuestas
-    return respuestas
-
-def radiobuttons(root,opciones):  #completar
-    respuesta = tk.StringVar()
-    for opcion in opciones:
-            radio_button = ttk.Radiobutton(root, text=opcion, variable=respuesta, value=opcion)
-                
-            radio_button.pack(anchor=tk.W, padx=70)
-
-    def enviar_respuesta():
-        if respuesta.get() == "":
-                messagebox.showerror("Error", "Debes seleccionar una opción.")
-        else:
-             respuesta=
-    boton_enviar = ttk.Button(root, text="Enviar", command=enviar_respuesta)
-    return respuesta
-
-#preguntas=consultaX("pregunta","_",pl)
 
 
 def on_closing():

@@ -7,13 +7,7 @@ juego().
 juego().
 juego().
 
-%tipo de consola...
-consola(pc,"PC").
-consola(play, "Play Station").
-consola(xbox,"Xbox").
-consola(de_mesa,"Juegos de mesa o de cartas").
-consola(movil,"Celular o tablet").
-consola(n_switch,"Nintendo Switch").
+
 
 
 %Multiplayers
@@ -261,30 +255,39 @@ consola(n_switch,"Mario Bros").
 
 
 %categorias de preguntas
+caracteristica(console).  %cambie el nombre para simplificar la consulta
 caracteristica(mentalidad).
 caracteristica(factorSorpresa).
 caracteristica(expresion).
-caracteristica(consola).
+
 
 
 %preguntas
 pregunta(mentalidad, "Le dedicas mucho tiempo a jugar?").
-pregunta(consola,"Que plataforma preferis para jugar?").
+pregunta(console,"Que plataforma preferis para jugar?").
 pregunta(factorSorpresa, "Al explorar, te encuentras con un enemigo, que es lo primero que haces? ").
 pregunta(expresion, "A la hora de jugar, que tan comunicativo sos?").
 
 %Mentalidad al Jugar
-mentalidad(supervivencia, "Unicamente en las noches").
+mentalidad(supervivencia, "Solo en las noches").
 mentalidad(accion, "Me hago el tiempo como sea").
 mentalidad(multiplayer,"Me hago el tiempo como sea"). 
 mentalidad(estrategia,"Me hago el tiempo como sea"). 
 mentalidad(con_historia, "Solo si estoy muy aburrido").
-mentalidad(aventura, "Tengo mi momento anual donde vicio todos los días").
-mentalidad(rpg, "Tengo mi momento anual donde vicio todos los días").
+mentalidad(aventura, "Tengo mi momento anual donde vicio todos los dias").
+mentalidad(rpg, "Tengo mi momento anual donde vicio todos los dias").
 mentalidad(deportes, "Unicamente en las noches").
 mentalidad(plataformer, "Solo si estoy muy aburrido").
 mentalidad(terror, "Solo en las noches").
 
+
+%tipo de consola...
+console(pc,"PC").
+console(play, "Play Station").
+console(xbox,"Xbox").
+console(de_mesa,"Juegos de mesa o de cartas").
+console(movil,"Celular o tablet").
+console(n_switch,"Nintendo Switch").
 
 %Factor de Sorpresa
 factorSorpresa(supervivencia, "Me retiro a un lugar escondido y espero a que asome el enemigo").
