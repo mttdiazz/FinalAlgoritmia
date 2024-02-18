@@ -81,8 +81,30 @@ def main():
 
 #main()
 
-def mostrar_resultado(respuestas):
-    print(respuestas)
+def mostrar_resultado(respuestas,pl,categorias):
+
+
+    #intento 1: interseccion
+    res=[]
+    consolas=respuestas.pop(0)
+    juegos_posibles=[]
+    generos=[]
+    for c in consolas:
+        c=consultaY("console",'"'+c+'"',pl)[0]
+        juegos_posibles.extend(consultaX("consola",c,pl))
+    juegos_posibles=eliminar_repetidos(juegos_posibles)  #los juegos soportados por las consolas elegidas
+    for i in range(len(respuestas)):
+        generos.extend(consultaY(categorias[i+1],'"'+respuestas[i]+'"',pl))
+    generos=eliminar_repetidos(generos)
+    for g in generos:
+        aux=consultaX("genero",g,pl)
+        print(g + ": ")
+        print(aux)
+        for juego in aux:
+            if juego in juegos_posibles:  #los juegos del genero elegido que estan en las consolas elegidas
+                res.append(juego)
+    
+    print(res)
 
 
 def mostrar_preguntas(categorias,pl,respuestas,i,cant):  #recursividad indirecta + clausuras -> revisar!!!!
@@ -140,7 +162,7 @@ def mostrar_preguntas(categorias,pl,respuestas,i,cant):  #recursividad indirecta
 
     if i<cant:
         widgets=[]
-        pregunta=consultaX("pregunta",categorias[i],pl)
+        pregunta=consultaX("pregunta",categorias[i],pl)[0]
         l1=ttk.Label(root,text="Pregunta "+str(i+1)+" de "+str(cant))
         l1.place(x=50,y=10)
         l2=ttk.Label(root,text=pregunta)
@@ -156,7 +178,7 @@ def mostrar_preguntas(categorias,pl,respuestas,i,cant):  #recursividad indirecta
 
 
     else:    #finalizar cuestionario
-        mostrar_resultado(respuestas)
+        mostrar_resultado(respuestas,pl,categorias)
 
 def inicio():
     pl = Prolog()

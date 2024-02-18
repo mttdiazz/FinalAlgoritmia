@@ -99,7 +99,7 @@ genero(con_historia,"Zelda").
 %Supervivencia
 genero(supervivencia,"Minecraft").
 genero(supervivencia,"Pumpkin panic").
-genero(supervivencia,"No man’s sky").
+genero(supervivencia,"No man's sky").
 genero(supervivencia,"60 seconds").
 genero(supervivencia,"Starwars Battlefront").
 
@@ -116,7 +116,7 @@ genero(rpg, "Genshin Impact").
 
 
 %deportes
-genero(deportes,"Fórmula 1").
+genero(deportes,"Formula 1").
 genero(deportes,"FIFA").
 genero(deportes,"Just Dance").
 genero(deportes,"Fight night Champion").
@@ -201,7 +201,7 @@ consola(xbox,"Among Us").
 consola(xbox,"Ace Attorney").
 consola(xbox,"What Remains of Edith Finch").
 consola(xbox,"Minecraft").
-consola(xbox,"No Man’s Sky").
+consola(xbox,"No Man's Sky").
 consola(xbox,"FIFA").
 consola(xbox,"Just Dance").
 consola(xbox,"Formula 1").
@@ -276,7 +276,7 @@ mentalidad(estrategia,"Me hago el tiempo como sea").
 mentalidad(con_historia, "Solo si estoy muy aburrido").
 mentalidad(aventura, "Tengo mi momento anual donde vicio todos los dias").
 mentalidad(rpg, "Tengo mi momento anual donde vicio todos los dias").
-mentalidad(deportes, "Unicamente en las noches").
+mentalidad(deportes, "Solo en las noches").
 mentalidad(plataformer, "Solo si estoy muy aburrido").
 mentalidad(terror, "Solo en las noches").
 
