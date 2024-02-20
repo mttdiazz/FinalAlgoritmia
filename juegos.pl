@@ -52,7 +52,7 @@ genero(accion,"Clash Royale").
 genero(aventura, "Minecraft").
 genero(aventura, "Hogwarts Legacy").
 genero(aventura, "Star Wars Battlefront").
-genero(aventura, "Uncarted").
+genero(aventura, "Uncharted").
 genero(aventura, "The Last of Us").
 genero(aventura, "Tomb Raider").
 genero(aventura, "Assasins Creed").

@@ -4,17 +4,8 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import font
 from tkinter import ttk
-
-def questionario(callback):
-    root=tk.Tk()
-    root.title("Test Questionario")
-    style=ttk.Style()
-    style.theme_use('aqua')
-
-    def on_closing():
-        root.quit()
-    root.protocol("WM_DELETE_WINDOW", on_closing)
-    root.mainloop()
+import operator
+import webbrowser
 
 def bytes_a_string(bytestring): #pasar de byte-string a strings
     if type(bytestring)==bytes:
@@ -81,7 +72,43 @@ def main():
 
 #main()
 
-def mostrar_resultado(respuestas,pl,categorias):
+def ordenar_mas_apariciones(lista):
+    res=[]
+    aux={}
+    while len(lista)!=0:
+        item=lista[0]
+        cant=lista.count(item)
+        aux[item]=cant
+        while item in lista:
+            lista.remove(item)
+    aux=sorted(aux.items(), reverse=True,key=operator.itemgetter(1)) #ordenar el diccionario de mayor a menor
+    for juego in aux:
+        res.append(juego[0])
+    return res
+
+
+def mostrar_resultados(juegos):
+    pl=Prolog()
+    pl.consult("descripciones.pl")
+    y_position=150
+    
+    for juego in juegos:
+        descripcion=consultaX("descripcion",'"'+juego+'"',pl)
+        if descripcion:
+            game_name=juego
+            game_link=descripcion[0]
+            label_text="{}: {}".format(game_name,game_link)
+            game_label=ttk.Label(root, text=label_text, cursor="hand2", foreground="blue")
+            game_label.bind(game_label.bind("<Button-1>", lambda e: webbrowser.open_new(game_link))
+)
+            game_label.place(x=50, y=y_position)
+            y_position+=30
+
+        
+
+
+
+def calcular_resultado(respuestas,pl,categorias):
 
 
     #intento 1: interseccion
@@ -98,13 +125,16 @@ def mostrar_resultado(respuestas,pl,categorias):
     generos=eliminar_repetidos(generos)
     for g in generos:
         aux=consultaX("genero",g,pl)
-        print(g + ": ")
-        print(aux)
+        
         for juego in aux:
             if juego in juegos_posibles:  #los juegos del genero elegido que estan en las consolas elegidas
                 res.append(juego)
     
-    print(res)
+    final=ordenar_mas_apariciones(res)[0:3]  #los 3 juegos que mas aparecen
+
+    mostrar_resultados(final)
+
+    
 
 
 def mostrar_preguntas(categorias,pl,respuestas,i,cant):  #recursividad indirecta + clausuras -> revisar!!!!
@@ -178,7 +208,7 @@ def mostrar_preguntas(categorias,pl,respuestas,i,cant):  #recursividad indirecta
 
 
     else:    #finalizar cuestionario
-        mostrar_resultado(respuestas,pl,categorias)
+        calcular_resultado(respuestas,pl,categorias)
 
 def inicio():
     pl = Prolog()
