@@ -259,6 +259,7 @@ caracteristica(console).  %cambie el nombre para simplificar la consulta
 caracteristica(mentalidad).
 caracteristica(factorSorpresa).
 caracteristica(expresion).
+caracteristica(parte_favorita).
 
 
 
@@ -267,6 +268,7 @@ pregunta(mentalidad, "Le dedicas mucho tiempo a jugar?").
 pregunta(console,"Que plataforma preferis para jugar?").
 pregunta(factorSorpresa, "Al explorar, te encuentras con un enemigo, que es lo primero que haces? ").
 pregunta(expresion, "A la hora de jugar, que tan comunicativo sos?").
+pregunta(parte_favorita,"Cual es tu parte favorita de jugar?").
 
 %Mentalidad al Jugar
 mentalidad(supervivencia, "Solo en las noches").
@@ -315,3 +317,15 @@ expresion(simulacion, "Prefiero no hablar mucho").
 expresion(deportes, "Comunico todo movimiento a mi equipo").
 expresion(plataformer, "Prefiero no hablar mucho").
 expresion(terror, "Solo por chat de texto").
+
+%Parte favorita
+parte_favorita(multiplayer,"Interactuar con otros jugadores").
+parte_favorita(accion,"Poner a prueba mis habilidades").
+parte_favorita(supervivencia,"Poner a prueba mis habilidades").
+parte_favorita(deportes,"Poner a prueba mis habilidades").
+parte_favorita(plataformer,"Poner a prueba mis habilidades").
+parte_favorita(rpg,"Explorar el mundo").
+parte_favorita(aventura,"Explorar el mundo").
+parte_favorita(con_historia,"Encontrar secretos y lore").
+parte_favorita(estrategia,"Resolver problemas y acertijos").
+parte_favorita(terror,"Enfrentarme a lo desconocido").
