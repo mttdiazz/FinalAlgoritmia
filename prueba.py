@@ -58,7 +58,7 @@ def eliminar_repetidos(lista):
     return nueva
 
 
-def ordenar_mas_apariciones(lista):
+""" def ordenar_mas_apariciones(lista):
     res=[]
     aux={}
     while len(lista)!=0:
@@ -70,8 +70,30 @@ def ordenar_mas_apariciones(lista):
     aux=sorted(aux.items(), reverse=True,key=operator.itemgetter(1)) #ordenar el diccionario de mayor a menor
     for juego in aux:
         res.append(juego[0])
-    return res
+    return res """
+def ordenar_mas_apariciones(lista): #con automata
+    res=[]
+    aux={}
+    max=1
+    for item in lista:
+        if item in res:  #estado 1
+            cant=aux[item]+1
+            res.remove(item)
+            if cant>max:  #estado 3
+                index=0
+                max=cant
+            else:         #estado 4
+                referencia=list(aux.keys())[list(aux.values()).index(cant)]
+                index=res.index(referencia)
+            res.insert(index,item)
+            aux[item]+=1
 
+        else: #estado 2
+            res.append(item)
+            aux[item]=1
+    
+    #aceptacion
+    return res
 def open_link(event, link):
     webbrowser.open_new(link)
 
@@ -79,8 +101,9 @@ def mostrar_resultados(juegos):
     pl=Prolog()
     pl.consult("descripciones.pl")
     y_var=70
+    root.geometry('510x700')  
     results_title='Estos son los resultados:'
-    results_title_label=ttk.Label(root,text=results_title, cursor="hand2", foreground="black", font=("Helvetica", 12, "bold"))
+    results_title_label=ttk.Label(root,text=results_title, foreground="black", font=("Helvetica", 12, "bold"))
     results_title_label.place(x=110, y=10)
     for juego in juegos:
         descripcion = consultaX("descripcion", '"' + juego + '"', pl)
@@ -97,9 +120,9 @@ def mostrar_resultados(juegos):
             game_title_label.place(x=60,y=y_var)
             y_var+=30
             game_description_label.place(x=50,y=y_var)
-            y_var+=100
+            y_var+=120
             game_bullet_label.place(x=50,y=y_var)
-            y_var+=30
+            y_var+=40
 
 
         
@@ -133,7 +156,6 @@ def calcular_resultado(respuestas,pl,categorias):
 
     if len(final)>3:
         final=final[0:3]
-    print(final)
     mostrar_resultados(final)
 
     
@@ -144,7 +166,7 @@ def mostrar_preguntas(categorias,pl,respuestas,i,cant):
     def listbox(opciones,respuestas):
         rsp=[]
         l=ttk.Label(root,text="Selecciona una o varias opciones")
-        l.place(x=150,y=70)
+        l.place(x=150,y=90)
         widgets.append(l)
         list = tk.Listbox(root, selectmode = "multiple") 
         list.pack(expand = "YES", fill = "x")  
@@ -165,16 +187,19 @@ def mostrar_preguntas(categorias,pl,respuestas,i,cant):
                 mostrar_preguntas(categorias,pl,respuestas,i+1,cant)
 
         enviar=ttk.Button(frm,text="Enviar",command=send)
-        enviar.pack(pady=100)
+        enviar.pack(pady=130,ipadx=10,ipady=10,padx=100)
         widgets.append(enviar)
         
         
 
     def radiobuttons(opciones,respuestas): 
         respuesta = tk.StringVar()
+        y_var=150
         for opcion in opciones:
                 radio_button = ttk.Radiobutton(root, text=opcion, variable=respuesta, value=opcion)
-                radio_button.pack(anchor=tk.W, padx=70)
+                #radio_button.pack(anchor=tk.W, padx=70,ipady=10)
+                radio_button.place(y=y_var,x=70)
+                y_var+=40
                 widgets.append(radio_button)
 
         def enviar_respuesta():
@@ -188,7 +213,8 @@ def mostrar_preguntas(categorias,pl,respuestas,i,cant):
                 mostrar_preguntas(categorias,pl,respuestas,i+1,cant)
 
         boton_enviar = ttk.Button(root, text="Enviar", command=enviar_respuesta)
-        boton_enviar.pack(anchor=tk.W,padx=80,pady=10)
+        #boton_enviar.pack(anchor=tk.W,padx=80,pady=10,ipadx=10,ipady=10)
+        boton_enviar.place(x=200,y=y_var,height=30,width=80)
         widgets.append(boton_enviar)
 
 
@@ -197,8 +223,8 @@ def mostrar_preguntas(categorias,pl,respuestas,i,cant):
         pregunta=consultaX("pregunta",categorias[i],pl)[0]
         l1=ttk.Label(root,text="Pregunta "+str(i+1)+" de "+str(cant))
         l1.place(x=50,y=10)
-        l2=ttk.Label(root,text=pregunta)
-        l2.place(x=50,y=30)
+        l2=ttk.Label(root,text=pregunta,font=("Helvetica", 16, "bold"))
+        l2.place(x=60,y=50)
         widgets.append(l1)
         widgets.append(l2)
         opciones=eliminar_repetidos(consultaX(categorias[i],"_",pl))
@@ -226,7 +252,7 @@ def inicio():
      
 def iniciarGUI(lista):
     def callback(name):
-        print("Name: " + name)
+        #print("Name: " + name)
         automata = AutomataNombre()
         if automata.validar_nombre(name):
             print("El nombre es válido.")
@@ -239,7 +265,7 @@ def iniciarGUI(lista):
 lista_nombres=[]
 # Obtener el nombre y usarlo en el código
 iniciarGUI(lista_nombres)
-print("Nombre obtenido:", lista_nombres)
+#print("Nombre obtenido:", lista_nombres)
 while len(lista_nombres)==0:
     iniciarGUI(lista_nombres)
 
@@ -250,14 +276,14 @@ root.title("Cuestionario")
 root.geometry('510x500')   #tamaño de la ventana (anchoXalto)
 frm = ttk.Frame(root)   
 frm.pack(fill=tk.BOTH, expand=True) 
-texto1=ttk.Label(frm, text="GamerBot")  #titulo
-texto1.pack(pady=10)
-texto="Bienvenido: "+nombre_validado+"! Cuando estes listo, inicia el cuestionario."
+texto1=ttk.Label(frm, text="GamerBot",font=("Helvetica", 20, "bold"))  #titulo
+texto1.pack(pady=10,ipady=40,anchor=tk.N)
+texto="Bienvenido: "+nombre_validado+"! \nCuando estes listo, inicia el cuestionario."
 print(nombre_validado)
-texto2_ttk=ttk.Label(frm, text=texto)
-texto2_ttk.place(x=100,y=100)
+texto2_ttk=ttk.Label(frm, text=texto,font=("Helvetica", 11))
+texto2_ttk.place(x=100,y=160)
 boton=ttk.Button(frm, text="Iniciar cuestionario", command=inicio) #boton de inicio
-boton.place(x=150, y=300)  #necesita una referencia (anchor), por omisión esquina superior izq. Mide en pixels
+boton.place(x=170, y=300,width=140,height=50)  #necesita una referencia (anchor), por omisión esquina superior izq. Mide en pixels
 
 def on_closing():
         if messagebox.askokcancel("Salir", "¿Estás seguro que deseas salir?"):

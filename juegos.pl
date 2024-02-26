@@ -266,8 +266,8 @@ caracteristica(parte_favorita).
 %preguntas
 pregunta(mentalidad, "Le dedicas mucho tiempo a jugar?").
 pregunta(console,"Que plataforma preferis para jugar?").
-pregunta(factorSorpresa, "Al explorar, te encuentras con un enemigo, que es lo primero que haces? ").
-pregunta(expresion, "A la hora de jugar, que tan comunicativo sos?").
+pregunta(factorSorpresa, "Al explorar, te encuentras con un enemigo, \nque es lo primero que haces? ").
+pregunta(expresion, "A la hora de jugar, que tan comunicativo \nsos?").
 pregunta(parte_favorita,"Cual es tu parte favorita de jugar?").
 
 %Mentalidad al Jugar

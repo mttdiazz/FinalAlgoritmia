@@ -9,10 +9,10 @@ descripcion("Age of Empires","Age of Empires: Definitive Edition is the new, lov
 descripcion("Age of Empires","https://www.ageofempires.com").
 
 
-descripcion("Among Us","Adentrate en Among Us, el juego donde la confianza y la traicion 
-                        \nse enfrentan en una batalla de ingenio y mentiras. Desafia 
-                        \ntus habilidades y conspira con tus amigos en esta emocionante 
-                        \naventura espacial!").
+descripcion("Among Us","Enter Among Us, the game where trust and betrayal 
+                        \ncollide in a battle of wits and deception. Challenge 
+                        \nyour deduction skills and conspire with your friends 
+                        \nin this exciting space adventure!").
 descripcion("Among Us","https://among-us.softonic.com/").
 
 descripcion("Fall Guys","Fall Guys is a free, cross-platform massively multiplayer party royale game. 
@@ -31,10 +31,9 @@ descripcion("Valorant","Blend your style and experience on a global, competitive
                         \nDeathmatch and Spike Rush.").
 descripcion("Valorant","https://playvalorant.com/en-us/").
 
-descripcion("Call of Duty","Compete across several new multiplayer maps, and
-                            \nmultiple new game modes. Climb the ranks in Season 2
-                            \nof Ranked Play, take on the next Zombies story
-                            \nmission, and more.").
+descripcion("Call of Duty","Compete across several new multiplayer maps, and multiple new 
+                            \ngame modes. Climb the ranks in Season 2 of Ranked Play, take 
+                            \non the next Zombies story mission, and more.").
 descripcion("Call of Duty","https://www.callofduty.com").
 
 descripcion("League of Legends","League of Legends is a team-based strategy game 
@@ -55,7 +54,7 @@ descripcion("Phasmaphobia","Phasmophobia is a 4-player, online co-op, psychologi
                             \nand record evidence to sell on to a ghost removal team.").
 descripcion("Phasmophobia","https://store.steampowered.com/app/739630/Phasmophobia/").
 
-descripcion("Starwars Battlefront","Become a hero in the ultimate Star Wars™ adventure. 
+descripcion("Starwars Battlefront","Become a hero in the ultimate Star Wars adventure. 
                                     \nTest your blaster, lightsaber, and Force mastery in huge online battles, 
                                     \noffline battles against AI bots, or in Co-op.").
 descripcion("Starwars Battlefront","https://www.ea.com/es-es/games/starwars/battlefront/star-wars-battlefront-2").
@@ -65,14 +64,14 @@ descripcion("Truco","El truco es un juego de naipes con baraja española;
                     \npara ganar se deben sumar una cantidad determinada de puntos.").
 descripcion("Truco","https://es.wikipedia.org/wiki/Truco_(juego_de_naipes)").
 
-descripcion("ChinChon","Juego de baraja española de 40 o 48 cartas.
-                        \nSe juega hasta que sólo quede un jugador tras eliminar a todos sus rivales.
+descripcion("ChinChon","Juego de baraja espanola de 40 o 48 cartas.
+                        \nSe juega hasta que solo quede un jugador tras eliminar a todos sus rivales.
                         \nEl objetivo en cada una de las manos es sumar el menor número de puntos posible.").
 descripcion("ChinChon","https://www.ludoteka.com/clasika/chinchon.html").
 
-descripcion("Poker","El poker es una familia de juegos de cartas con apuestas en el que los jugadores, 
-                    \n hacen apuestas sobre una puja inicial, recayendo la suma total 
-                    \nde las apuestas en el jugador con la mejor combinación de cartas.").
+descripcion("Poker","El poker es una familia de juegos de cartas con apuestas en el que los 
+                    \njugadores hacen apuestas sobre una puja inicial, recayendo la suma total 
+                    \nde las apuestas en el jugador con la mejor combinacion de cartas.").
 descripcion("Poker","https://es.wikipedia.org/wiki/Poker").
 
 descripcion("Blackjack","El blackjack es un juego de cartas propio de los casinos.
@@ -81,7 +80,7 @@ descripcion("Blackjack","https://es.wikipedia.org/wiki/Blackjack").
 
 descripcion("Uno","UNO es un juego de cartas producto de Mattel desde 1992.
                     \nCuando a un jugador le quede una sola carta, 
-                    \ntiene que decir en voz alta “UNO”").
+                    \ntiene que decir en voz alta 'UNO!'").
 descripcion("Uno","https://es.wikipedia.org/wiki/Uno_(juego)").
 
 descripcion("Ajedrez","El ajedrez es un juego de tablero entre dos contrincantes 
@@ -90,22 +89,23 @@ descripcion("Ajedrez","El ajedrez es un juego de tablero entre dos contrincantes
                         \nsegún ciertas reglas.").
 descripcion("Ajedrez","https://www.chess.com/es").
 
-descripcion("Teg","TEG o Plan Táctico y Estratégico de la Guerra es un juego de mesa argentino que
-                    \nPlantea un conflicto bélico que ocurre sobre un planisferio dividido en 50 países.
-                    \nEl jugador que primero logre cumplir su objetivo será el ganador del juego.").
+descripcion("Teg","TEG o Plan Tactico y Estrategico de la Guerra es un juego de mesa 
+                    \nargentino que plantea un conflicto bélico sobre un planisferio 
+                    \ndividido en 50 países. El jugador que primero logre cumplir 
+                    \nsu objetivo será el ganador del juego.").
 descripcion("Teg","https://es.wikipedia.org/wiki/TEG").
 
 descripcion("Catan","Catan is a multiplayer board game where players take on the roles of settlers, 
                     \neach attempting to build and develop holdings while trading and acquiring resources.").
 descripcion("Catan","https://en.wikipedia.org/wiki/Catan").
 
-descripcion("Clue","Clue es un juego de mesa de detectives y misterio.
-                    \nEl objetivo del juego es descubrir quién asesinó al Dr. Black,
-                    \n con qué arma, y en qué habitación se cometió el crimen. ").
+descripcion("Clue","Clue is a detective and mystery board game. The objective of the game 
+                    \nis to discover who murdered Dr. Black, with what weapon, and in which 
+                    \nroom the crime was committed. ").
 descripcion("Clue","https://es.wikipedia.org/wiki/Cluedo").
 
 descripcion("Monopoly","Monopoly es un juego de mesa basado en el intercambio 
-                        \ny la compraventa de bienes raíces ").
+                        \ny la compraventa de bienes raices ").
 descripcion("Monopoly","https://es.wikipedia.org/wiki/Monopoly").
 
 descripcion("Tuttifrutti","El tutti frutti es un juego de lápiz y papel cuyo objetivo es escribir, 
@@ -117,48 +117,46 @@ descripcion("Dragon Ball Cards","DRAGON BALL SUPER CARD GAME es un juego de cart
                                 \nbasado en la serie del mismo nombre.").
 descripcion("Dragon Ball Cards","https://es.dragon-ball-official.com/news/01_1246.html").
 
-descripcion("Clash Royale","¡Entra en la arena! Forma tu mazo bélico y aventaja 
-                            \na tus rivales en batallas frenéticas en tiempo real. 
-                            \n¡Comienza a luchar contra jugadores de todo el mundo!").
+descripcion("Clash Royale","Enter the arena! Build your war deck and outdo your rivals in frenetic battles 
+                            \nin real time. Start fighting against players from all over the world!").
 descripcion("Clash Royale","https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=es&gl=US&pli=1").
 
 
-descripcion("Clash of Clans","Construye tu aldea, crea un clan y compite en las épicas guerras 
-                            \nde clanes junto a millones de jugadores.
-                            \nTe esperan bárbaros con bigotes impecables, magos con ardientes 
-                            \nbolas de fuego y otras increíbles tropas. ¡Descubre el mundo de Clash of Clans!").
+descripcion("Clash of Clans","Build your village, create a clan and compete in epic clan wars alongside millions of players.
+                            \nBarbarians with impeccable mustaches, wizards with fiery fireballs and other incredible troops 
+                            \nawait you. Discover the world of Clash of Clans!").
 descripcion("Clash of Clans","https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=es&gl=US").
 
 
-descripcion("Mortal Kombat","Descubre el nuevo universo de Mortal Kombat.
-                            \n¡Mortal Kombat 1 marca el comienzo de una nueva era para la icónica franquicia, 
-                            \ncon un sistema de lucha, modos de juego y Fatalities nuevos!").
+descripcion("Mortal Kombat","Discover the new universe of Mortal Kombat. Mortal Kombat 1 ushers in a new era for 
+                            \nthe iconic franchise, with a new fighting system, game modes, and Fatalities!").
 descripcion("Mortal Kombat","https://www.mortalkombat.com/es-mx").
 
-descripcion("Hogwarts Legacy","Hogwarts Legacy es un juego de rol inmersivo en mundo abierto. 
-                                \nAhora puedes tomar el control de la acción y ser el centro de tu propia aventura 
-                                \nen el Hogwarts del siglo XIX. El legado está en tus manos.").
+descripcion("Hogwarts Legacy","Hogwarts Legacy is an immersive open-world role-playing game. 
+                                \nNow you can take control of the action and be the center of 
+                                \nyour own adventure in the magical world. The legacy is in your hands.").
 descripcion("Hogwarts Legacy","https://www.hogwartslegacy.com/es-es").
 
-descripcion("Uncharted","Experimenta una de las series de juegos más veneradas de todos los tiempos 
-                        \nmientras sigues la peligrosa travesía de Nathan Drake por el mundo, 
-                        \ndesde sus humildes comienzos hasta sus extraordinarios descubrimientos.").
+descripcion("Uncharted","Experience one of the most revered game series of all time as you follow 
+                        \nNathan Drake's perilous journey across the world, from his humble beginnings 
+                        \nto his extraordinary discoveries.").
 descripcion("Uncharted","https://www.playstation.com/es-ar/games/uncharted-the-nathan-drake-collection/").
 
-descripcion("The Last of Us","In a devastated civilization, where the infected and hardened survivors proliferate, 
-                            \nJoel, a weary protagonist, is hired to smuggle a 14-year-old girl named Ellie. 
-                            \nImmerse yourself in an experience of enhanced narrative, effects and facial animations, 
-                            \nas well as rich exploration and combat.").
+descripcion("The Last of Us","In a devastated civilization, where the infected and hardened survivors 
+                            \nproliferate, Joel, a weary protagonist, is hired to smuggle a 14-year-old 
+                            \ngirl named Ellie. Immerse yourself in an experience of enhanced narrative, 
+                            \neffects and facial animations, as well as rich exploration and combat.").
 descripcion("The Last of Us","https://www.playstation.com/es-ar/games/the-last-of-us-part-i/").
 
-descripcion("Tomb Raider","Lara debe resistir en combates explosivos, personalizar sus armas y su equipo 
-                        \ny superar escenarios agotadores para sobrevivir a su primera aventura 
-                        \ny descubrir el secreto mortal de la isla").
+descripcion("Tomb Raider","The action-adventure sequence that takes Lara Croft from a callow young woman to a 
+                        \ntough survivor has been revamped for next-gen consoles. Lara must endure explosive combat, 
+                        \ncustomize her weapons and equipment, and overcome grueling scenarios to survive her first 
+                        \nadventure and discover the island's deadly secret.").
 descripcion("Tomb Raider","https://store.playstation.com/es-es/product/EP0082-CUSA00109_00-000000TOMBRAIDER").
 
-descripcion("Assasins Creed","Juega mientras forjas tu camino a lo largo de la historia. 
-            \nAssassin's Creed te sumerge en los recuerdos de tus ancestros, 
-            \nque luchan por proteger el libre albedrío en momentos clave de la historia de la humanidad.").
+descripcion("Assasins Creed","Play as you forge your path through history in this award-winning video game saga. 
+                            \nAssassin's Creed immerses you in the memories of your ancestors, who fight to protect 
+                            \nfree will at key moments in human history.").
 descripcion("Assasins Creed","https://www.ubisoft.com/es-es/game/assassins-creed").
 
 descripcion("God of War","Living as a man outside the shadow of the gods, Kratos must adapt 
@@ -167,8 +165,8 @@ descripcion("God of War","Living as a man outside the shadow of the gods, Kratos
                         \nand fight to fulfill a deeply personal quest.").
 descripcion("God of War", "https://store.playstation.com/en-us/product/UP9000-CUSA07408_00-00000000GODOFWAR?gad_source=1&gclid=Cj0KCQiA5-uuBhDzARIsAAa21T-CzR0Q6z0pUcGppy2M-IoL1mAy55oU-Gk-6nNlUTcae4JEndk8_XAaAiFoEALw_wcB/").
 
-descripcion("Far Cry","Adéntrate en la cruda experiencia de una improvisada guerrilla moderna 
-                        \ny derroca a un dictador y a su hijo para liberar Yara.").
+descripcion("Far Cry","Delve into the raw experience of an improvised modern guerrilla and overthrow 
+                        \na dictator and his son to liberate Yara.").
 descripcion("Far Cry", "https://www.ubisoft.com/es-mx/game/far-cry/far-cry-6").
 
 descripcion("Legend of Zelda","You'll decide your own path through the sprawling landscapes 
@@ -195,10 +193,10 @@ descripcion("Pokemon","Experience the true joy of the Pokemon series,
                         \nnow in an open-world game that players of any age can enjoy.").
 descripcion("Pokemon", "https://www.pokemon.com/us/pokemon-video-games/all-pokemon-games").
 
-descripcion("What Remains of Edith Finch", "What Remains of Edith Finch is a collection of strange tales 
-                                            \nabout a family in Washington state. Explore the colossal Finch house, 
-                                            \nsearching for stories as Edith explores her family history and tries to 
-                                            \nfigure out why she's the last one in her family left alive.").
+descripcion("What Remains of Edith Finch", "What Remains of Edith Finch is a collection of strange tales about a 
+                                            \nfamily in Washington state. Explore the colossal Finch house, searching 
+                                            \nfor stories as Edith discovers her family history and tries to figure
+                                            \nout why she's the last one in her family left alive.").
 descripcion("What Remains of Edith Finch", "https://store.steampowered.com/app/501300/What_Remains_of_Edith_Finch/").
 
 descripcion("7 days","7 Days is a mobile visual novel where you can choose your path with your actions.
@@ -241,13 +239,14 @@ descripcion("Stardew Valley","You've inherited your grandfather's old farm plot 
 descripcion("Stardew Valley","https://store.steampowered.com/app/413150/Stardew_Valley/").
 
 
-descripcion("Genshin Impact","Experimenta una aventura inmersiva para un jugador. Como viajero de otro mundo, 
-                            \ncomenzarás una travesía para reunirte con tu familiar perdido y encontrarte a ti mismo.
-                            \nLánzate a la batalla en solitario, o invita a tus amigos para derrotar monstruos 
-                            \npeligrosos en modo cooperativo multiplataforma").
+descripcion("Genshin Impact","Experiencie an immersive adventure. As a traveller from a far-away world, 
+                            \nyou'll set out in a journey to reunite with a long-lost family member.
+                            \nJump into battle solo, or invite your friends to defeat dangerous monsters
+                            \nin multiplatform co-op mode.").
 descripcion("Genshin Impact","https://genshin.hoyoverse.com/es/").
 
-descripcion("Formula 1","Design your dream F1 car and discover new performance parts to dominate the grid.").
+descripcion("Formula 1","Design your dream F1 car and discover new performance parts to 
+                        \ndominate the grid.").
 descripcion("Formula 1","https://www.formula1.com/en/gaming.html").
 
 
@@ -294,20 +293,20 @@ descripcion("Mario Bros","Meet Mario, the mustachioed hero of the Mushroom Kingd
                         \nabilities, he works alongside his friends to keep the Mushroom Kingdom safe.").
 descripcion("Mario Bros","https://mario.nintendo.com/es/").
 
-descripcion( "Mario Kart","Pisa el pedal a fondo y recorre circuitos de la serie de Mario Kart!
-                            \nCompite con tus amigos u oponentes de todo el mundo.").
+descripcion( "Mario Kart","Put the pedal to the metal in courses inspired by real world locations 
+                        \nas well as Mario Kart Series Favourites! Challenge up to seven friends
+                        \nor opponents worldwide!").
 descripcion( "Mario Kart", "https://mariokarttour.com/es-ES").
 
 
 descripcion("Backrooms","Explore the seemingly infinite expanse of eerily familiar levels 
-                                    \nin the backrooms based on the popular creepypasta lore. 
-                                    \nEach level features different ways to escape with danger along the way.").
+                        \nin the backrooms based on the popular creepypasta lore. 
+                        \nEach level features different ways to escape with danger along the way.").
 descripcion("Backrooms","https://store.steampowered.com/app/1943950/Escape_the_Backrooms/").
 
-descripcion("FNAF","Welcome to your new summer job at Freddy Fazbear's Pizza! The main attraction
-                    \nare animatronic robots, programmed to please the crowds! 
+descripcion("FNAF","Welcome to your new summer job at Freddy Fazbear's Pizza! 
                     \nFrom your small office you must watch the security cameras carefully, and
-                    \nIf something isn't right, namely if Freddybear or his friends aren't in their proper places, 
+                    \nif something isn't right, namely if Freddybear or his friends aren't in their proper places, 
                     \nyou must find them on the monitors and protect yourself if needed!
                     \nCan you survive five nights at Freddy's?").
 descripcion("FNAF","https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/?l=spanish").
@@ -319,9 +318,9 @@ descripcion("Pumpkin panic","https://pumpkinpanic.com").
 
 descripcion("Granny","Granny keeps you locked in her house and she will not let you go.
                     \nThe main door is covered with different locks and now you have to 
-                    \nsearch the house and find keys and other objects to unlock the door 
+                    \nsearch the house and find keys and other objects to unlock it
                     \nand escape. If you have failed to escape after the last day... 
-                    \nwell, you can probably figure out what happens then.").
+                    \nWell, you can probably figure out what happens then.").
 descripcion("Granny","https://store.steampowered.com/app/962400/Granny/").
 
 

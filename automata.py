@@ -10,7 +10,7 @@ class AutomataNombre:
         }
 
     def transicion(self, caracter):
-        print("Transicion: Self - {} Caracter: {}".format(self,caracter))
+        #print("Transicion: Self - {} Caracter: {}".format(self,caracter))
         if caracter.isupper():
             return 'mayuscula'
         elif caracter.islower():
@@ -21,14 +21,14 @@ class AutomataNombre:
     def validar_nombre(self, nombre):
         self.estado_actual = 'inicial'  # Reiniciamos al estado inicial
         for caracter in nombre:
-            print("Validar nombre: Caracter - "+caracter)
+            #print("Validar nombre: Caracter - "+caracter)
             entrada = self.transicion(caracter)
-            print("Validar: Entrada - "+entrada)
+            #print("Validar: Entrada - "+entrada)
             if ((entrada not in self.transiciones[self.estado_actual]) or entrada=='otro'):
                 self.estado_actual = 'error'
                 break
             self.estado_actual = self.transiciones[self.estado_actual][entrada]
-        print('Validar: Estado Actual - '+self.estado_actual)
+        #print('Validar: Estado Actual - '+self.estado_actual)
         if self.estado_actual in self.transiciones and not entrada == 'otro':
             self.estado_actual = self.estados_aceptacion
             return True
