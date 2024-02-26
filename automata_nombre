@@ -1,0 +1,11 @@
+// Autómata para validar nombres
+digraph {
+	inicial [label=inicial shape=circle]
+	error [label=error shape=circle]
+	intermedio [label=intermedio shape=circle]
+	aceptacion [label=aceptacion shape=doublecircle]
+	inicial -> intermedio [label=mayuscula]
+	intermedio -> intermedio [label=minuscula]
+	intermedio -> error [label=otro]
+	error -> error [label=""]
+}

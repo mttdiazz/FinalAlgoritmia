@@ -1,5 +1,6 @@
 from pyswip import Prolog
-
+from automata import AutomataNombre
+from welcome_GUI import get_name
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import font
@@ -57,21 +58,6 @@ def eliminar_repetidos(lista):
     return nueva
 
 
-def main():
-    pl = Prolog()
-    pl.consult("juegos.pl")
-    print("Juegos de PC: \n")
-    print(consultaX("consola","pc",pl))
-
-    print("\n\nGenero del FIFA:\n")
-    print(consultaY("genero",'"FIFA"',pl))  #no es lo mismo "" que '', hay que ser consistente con lo que esta en el .pl
-
-    print("\n\nPreguntas:\n")
-    print(consultaANY("pregunta",pl))
-
-
-#main()
-
 def ordenar_mas_apariciones(lista):
     res=[]
     aux={}
@@ -86,23 +72,35 @@ def ordenar_mas_apariciones(lista):
         res.append(juego[0])
     return res
 
+def open_link(event, link):
+    webbrowser.open_new(link)
 
 def mostrar_resultados(juegos):
     pl=Prolog()
     pl.consult("descripciones.pl")
-    y_position=150
-    
+    y_var=70
+    results_title='Estos son los resultados:'
+    results_title_label=ttk.Label(root,text=results_title, cursor="hand2", foreground="black", font=("Helvetica", 12, "bold"))
+    results_title_label.place(x=110, y=10)
     for juego in juegos:
-        descripcion=consultaX("descripcion",'"'+juego+'"',pl)
+        descripcion = consultaX("descripcion", '"' + juego + '"', pl)
         if descripcion:
-            game_name=juego
-            game_link=descripcion[0]
-            label_text="{}: {}".format(game_name,game_link)
-            game_label=ttk.Label(root, text=label_text, cursor="hand2", foreground="blue")
-            game_label.bind(game_label.bind("<Button-1>", lambda e: webbrowser.open_new(game_link))
-)
-            game_label.place(x=50, y=y_position)
-            y_position+=30
+            game_name = juego
+            game_description=descripcion[0]
+            game_link = descripcion[1]
+            game_title_text = "{}:".format(game_name)
+            game_bullet_text = "\u2022 {}".format(game_link)  # Bullet point unicode character
+            game_title_label = ttk.Label(root, text=game_title_text, foreground="black", font=("Helvetica", 10, "bold"))
+            game_description_label=ttk.Label(root,text=game_description,foreground="black", font=("Helvetica", 10))
+            game_bullet_label = ttk.Label(root, text=game_bullet_text, cursor="hand2", foreground="black", font=("Helvetica", 10, "underline"))
+            game_bullet_label.bind("<Button-1>", lambda e, link=game_link: open_link(e, link))
+            game_title_label.place(x=60,y=y_var)
+            y_var+=30
+            game_description_label.place(x=50,y=y_var)
+            y_var+=100
+            game_bullet_label.place(x=50,y=y_var)
+            y_var+=30
+
 
         
 
@@ -110,8 +108,6 @@ def mostrar_resultados(juegos):
 
 def calcular_resultado(respuestas,pl,categorias):
 
-
-    #intento 1: interseccion
     res=[]
     consolas=respuestas.pop(0)
     juegos_posibles=[]
@@ -130,14 +126,20 @@ def calcular_resultado(respuestas,pl,categorias):
             if juego in juegos_posibles:  #los juegos del genero elegido que estan en las consolas elegidas
                 res.append(juego)
     
-    final=ordenar_mas_apariciones(res)[0:3]  #los 3 juegos que mas aparecen
+    final=ordenar_mas_apariciones(res)  #los 3 juegos que mas aparecen
 
+    if len(final)==0:
+        final=juegos_posibles
+
+    if len(final)>3:
+        final=final[0:3]
+    print(final)
     mostrar_resultados(final)
 
     
 
 
-def mostrar_preguntas(categorias,pl,respuestas,i,cant):  #recursividad indirecta + clausuras -> revisar!!!!
+def mostrar_preguntas(categorias,pl,respuestas,i,cant): 
     
     def listbox(opciones,respuestas):
         rsp=[]
@@ -218,20 +220,44 @@ def inicio():
     cant=len(categorias)
     boton.destroy()  
     texto1.destroy()
+    texto2_ttk.destroy()
     mostrar_preguntas(categorias,pl,respuestas,0,cant)
      
      
+def iniciarGUI(lista):
+    def callback(name):
+        print("Name: " + name)
+        automata = AutomataNombre()
+        if automata.validar_nombre(name):
+            print("El nombre es válido.")
+            lista.append(name)
+        else:
+            print("El nombre no es válido.")
+    
+    # Comienza el flujo del programa
+    name = get_name(callback)
+lista_nombres=[]
+# Obtener el nombre y usarlo en el código
+iniciarGUI(lista_nombres)
+print("Nombre obtenido:", lista_nombres)
+while len(lista_nombres)==0:
+    iniciarGUI(lista_nombres)
+
+nombre_validado=lista_nombres[0]
 
 root = tk.Tk()
 root.title("Cuestionario") 
-root.geometry('500x500')   #tamaño de la ventana (anchoXalto)
+root.geometry('510x500')   #tamaño de la ventana (anchoXalto)
 frm = ttk.Frame(root)   
 frm.pack(fill=tk.BOTH, expand=True) 
 texto1=ttk.Label(frm, text="GamerBot")  #titulo
-texto1.pack(pady=10) 
+texto1.pack(pady=10)
+texto="Bienvenido: "+nombre_validado+"! Cuando estes listo, inicia el cuestionario."
+print(nombre_validado)
+texto2_ttk=ttk.Label(frm, text=texto)
+texto2_ttk.place(x=100,y=100)
 boton=ttk.Button(frm, text="Iniciar cuestionario", command=inicio) #boton de inicio
 boton.place(x=150, y=300)  #necesita una referencia (anchor), por omisión esquina superior izq. Mide en pixels
-
 
 def on_closing():
         if messagebox.askokcancel("Salir", "¿Estás seguro que deseas salir?"):
