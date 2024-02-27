@@ -8,6 +8,9 @@ from tkinter import ttk
 import operator
 import webbrowser
 
+#instalacion de pyswip
+#pip install git+https://github.com/yuce/pyswip@master#egg=pyswip
+
 def bytes_a_string(bytestring): #pasar de byte-string a strings
     if type(bytestring)==bytes:
         bytestring=bytestring.decode("utf-8")
@@ -72,28 +75,37 @@ def eliminar_repetidos(lista):
         res.append(juego[0])
     return res """
 def ordenar_mas_apariciones(lista): #con automata
-    res=[]
+    
+    resultado=[]
     aux={}
     max=1
     for item in lista:
-        if item in res:  #estado 1
+        if item in resultado:  #estado 1
             cant=aux[item]+1
-            res.remove(item)
+            resultado.remove(item)
             if cant>max:  #sub-estado 1
                 index=0
                 max=cant
             else:         #sub-estado 2
-                referencia=list(aux.keys())[list(aux.values()).index(cant)]
-                index=res.index(referencia)
-            res.insert(index,item)
+                valores=list(aux.values())
+                i=cant
+                while i not in valores and i>=0:
+                    i-=1
+                if i!=0:
+                    
+                    referencia=list(aux.keys())[valores.index(i)]
+                    index=resultado.index(referencia)
+                else:
+                    index=len(resultado)
+            resultado.insert(index,item)
             aux[item]+=1
 
         else: #estado 2
-            res.append(item)
+            resultado.append(item)
             aux[item]=1
     
     #aceptacion
-    return res
+    return resultado
 def open_link(event, link):
     webbrowser.open_new(link)
 
@@ -148,7 +160,6 @@ def calcular_resultado(respuestas,pl,categorias):
         for juego in aux:
             if juego in juegos_posibles:  #los juegos del genero elegido que estan en las consolas elegidas
                 res.append(juego)
-    
     final=ordenar_mas_apariciones(res)  #los 3 juegos que mas aparecen
 
     if len(final)==0:

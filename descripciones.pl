@@ -43,11 +43,6 @@ descripcion("League of Legends","League of Legends is a team-based strategy game
 descripcion("League of Legends","https://www.leagueoflegends.com/en-us/").
 
 
-descripcion("Counter Strike","Counter-Strike: Global Ofensive (CS:GO) amplía el juego de disparos en primera persona por equipos. 
-                            \nDos equipos compiten en múltiples rondas con un modo de juego enfocado en objetivos 
-                            \ncon la misión de ganar suficientes rondas para llevarse la victoria.").
-descripcion("Counter Strike","https://blog.counter-strike.net/es/").
-
 descripcion("Phasmaphobia","Phasmophobia is a 4-player, online co-op, psychological horror game. 
                             \nYou and your team of paranormal investigators will enter haunted locations 
                             \nfilled with paranormal activity. Use your ghost-hunting equipment to find 
@@ -60,7 +55,7 @@ descripcion("Starwars Battlefront","Become a hero in the ultimate Star Wars adve
 descripcion("Starwars Battlefront","https://www.ea.com/es-es/games/starwars/battlefront/star-wars-battlefront-2").
 
 
-descripcion("Truco","El truco es un juego de naipes con baraja española; 
+descripcion("Truco","El truco es un juego de naipes con baraja espanola; 
                     \npara ganar se deben sumar una cantidad determinada de puntos.").
 descripcion("Truco","https://es.wikipedia.org/wiki/Truco_(juego_de_naipes)").
 
@@ -251,7 +246,7 @@ descripcion("Formula 1","https://www.formula1.com/en/gaming.html").
 
 
 descripcion("FIFA","Enjoy next-generation HyperMotion2 technology, women's club football, 
-                    \nmen's and women's FIFA World Cup™, cross-play functionality and 
+                    \nmen's and women's FIFA World Cup, cross-play functionality and 
                     \nmuch more.").
 descripcion("FIFA","https://www.ea.com/es-es/games/fifa").
 
@@ -300,10 +295,10 @@ descripcion( "Mario Kart","Put the pedal to the metal in courses inspired by rea
 descripcion( "Mario Kart", "https://mariokarttour.com/es-ES").
 
 
-descripcion("Backrooms","Explore the seemingly infinite expanse of eerily familiar levels 
+descripcion("Escape the Backrooms","Explore the seemingly infinite expanse of eerily familiar levels 
                         \nin the backrooms based on the popular creepypasta lore. 
                         \nEach level features different ways to escape with danger along the way.").
-descripcion("Backrooms","https://store.steampowered.com/app/1943950/Escape_the_Backrooms/").
+descripcion("Escape the Backrooms","https://store.steampowered.com/app/1943950/Escape_the_Backrooms/").
 
 descripcion("FNAF","Welcome to your new summer job at Freddy Fazbear's Pizza! 
                     \nFrom your small office you must watch the security cameras carefully, and

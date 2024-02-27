@@ -9,10 +9,9 @@ genero(multiplayer, "Fortnite").
 genero(multiplayer, "Valorant").
 genero(multiplayer, "Call of Duty").
 genero(multiplayer, "League of Legends").
-genero(multiplayer, "Counter Strike").
 genero(multiplayer, "Phasmophobia").
 genero(multiplayer, "Escape the Backrooms").
-genero(multiplayer, "Star Wars Battlefront").
+genero(multiplayer, "Starwars Battlefront").
 genero(multiplayer, "Truco").
 genero(multiplayer, "ChinChon").
 genero(multiplayer, "Poker").
@@ -27,6 +26,7 @@ genero(multiplayer, "Tuttifrutti").
 genero(multiplayer, "Dragon Ball Cards").
 genero(multiplayer, "Clash Royale").
 genero(multiplayer, "Clash of Clans").
+genero(multiplayer,"Mortal Kombat").
 
 %Accion
 genero(accion,"Mortal Kombat").
@@ -37,12 +37,13 @@ genero(accion,"Call of Duty").
 genero(accion,"Clash of Clans"). 
 genero(accion,"Clash Royale"). 
 genero(accion,"Resident Evil Village"). 
+genero(accion, "Tomb Raider").
 
 
 %Aventura
 genero(aventura, "Minecraft").
 genero(aventura, "Hogwarts Legacy").
-genero(aventura, "Star Wars Battlefront").
+genero(aventura, "Starwars Battlefront").
 genero(aventura, "Uncharted").
 genero(aventura, "The Last of Us").
 genero(aventura, "Tomb Raider").
@@ -85,7 +86,7 @@ genero(con_historia,"The Last of Us").
 genero(con_historia,"Starwars Battlefront"). 
 genero(con_historia,"7 days"). 
 genero(con_historia,"Underworld office"). 
-genero(con_historia,"Zelda").
+genero(con_historia,"Legend of Zelda").
 genero(con_historia,"Resident Evil Village"). 
 
 
@@ -131,7 +132,7 @@ genero(plataformers,"Geometry Dash").
 
 
 %De terror
-genero(terror,"Backrooms").
+genero(terror,"Escape the Backrooms").
 genero(terror,"Phasmaphobia").
 genero(terror,"FNAF").
 genero(terror,"Pumpkin panic").
@@ -162,13 +163,15 @@ consola(pc, "Goat Simulator").
 consola(pc, "Stardew Valley").
 consola(pc, "Formula 1").
 consola(pc, "FIFA").
-consola(pc, "Backrooms").
+consola(pc, "Escape the Backrooms").
 consola(pc, "Phasmaphobia").
 consola(pc, "FNAF").
 consola(pc, "Resident Evil Village").
 consola(pc, "Geometry Dash").
 consola(pc, "Sonic").
-
+consola(pc, "Phasmophobia").
+consola(pc, "Assasins Creed").
+consola(pc, "Far Cry").
 
 %PS
 consola(play,"Starwars Battlefront").
@@ -192,7 +195,10 @@ consola(play,"No Man's Sky").
 consola(play, "Resident Evil Village").
 consola(play, "Sonic").
 consola(play, "Crash Bandicoot").
-
+consola(play,"Tomb Raider").
+consola(play, "Assasins Creed").
+consola(play, "God of War").
+consola(play, "Far Cry").
 
 %XBOX
 consola(xbox,"Fall Guys").
@@ -210,15 +216,17 @@ consola(xbox,"NBA 2k24").
 consola(xbox, "Resident Evil Village").
 consola(xbox, "Sonic").
 consola(xbox, "Crash Bandicoot").
+consola(xbox, "Assasins Creed").
+consola(xbox, "Far Cry").
 
 
 %Juegos de mesa o de cartas
 consola(de_mesa,"Truco").
-consola(de_mesa,"Chin-chon").
+consola(de_mesa,"ChinChon").
 consola(de_mesa,"Poker").
 consola(de_mesa,"Uno").
 consola(de_mesa,"Monopoly").
-consola(de_mesa,"Tutti-frutti").
+consola(de_mesa,"Tuttifrutti").
 consola(de_mesa,"Ajedrez").
 consola(de_mesa,"Teg").
 consola(de_mesa,"Catan").
@@ -227,6 +235,7 @@ consola(de_mesa,"Dragon Ball cards").
 consola(de_mesa,"Solitario").
 consola(de_mesa,"Yu Gi Oh").
 consola(de_mesa,"Pokemon").
+consola(de_mesa,"Blackjack").
 
 
 %Mobile
@@ -262,6 +271,7 @@ consola(n_switch,"Mario Bros").
 consola(n_switch, "Resident Evil Village").
 consola(n_switch, "Sonic").
 consola(n_switch,"Mario Kart").
+consola(n_switch, "Legend of Zelda").
 
 
 %categorias de preguntas
