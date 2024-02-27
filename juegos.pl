@@ -1,13 +1,3 @@
-%resultado final
-juego().
-juego().
-juego().
-juego().
-juego().
-juego().
-juego().
-
-
 
 
 %Multiplayers
@@ -46,6 +36,7 @@ genero(accion,"Valorant").
 genero(accion,"Call of Duty"). 
 genero(accion,"Clash of Clans"). 
 genero(accion,"Clash Royale"). 
+genero(accion,"Resident Evil Village"). 
 
 
 %Aventura
@@ -59,6 +50,7 @@ genero(aventura, "Assasins Creed").
 genero(aventura, "God of War").
 genero(aventura, "Far Cry").
 genero(aventura, "Legend of Zelda").
+genero(aventura,"Resident Evil Village"). 
 
 
 
@@ -80,6 +72,7 @@ genero(estrategia, "Blackjack").
 genero(estrategia, "Poker").
 genero(estrategia, "Clash of Clans").
 genero(estrategia, "Clash Royale").
+genero(estrategia,"Resident Evil Village"). 
 
 
 
@@ -93,6 +86,7 @@ genero(con_historia,"Starwars Battlefront").
 genero(con_historia,"7 days"). 
 genero(con_historia,"Underworld office"). 
 genero(con_historia,"Zelda").
+genero(con_historia,"Resident Evil Village"). 
 
 
 
@@ -126,12 +120,13 @@ genero(deportes,"Dream League Soccer 2").
 
 
 %Plataformers
-genero(platformers,"Super Mario").
+
 genero(plataformers,"Sonic").
 genero(plataformers,"Crash Bandicoot").
 genero(plataformers, "Fall Guys").
 genero(plataformers, "Mario Bros").
 genero(plataformers, "Mario Kart").
+genero(plataformers,"Geometry Dash").
 
 
 
@@ -142,6 +137,7 @@ genero(terror,"FNAF").
 genero(terror,"Pumpkin panic").
 genero(terror,"The Last of Us").
 genero(terror,"Granny").
+genero(terror,"Resident Evil Village"). 
 
 
 
@@ -158,7 +154,7 @@ consola(pc, "League of Legends").
 consola(pc, "Mortal Kombat").
 consola(pc, "Ace Attorney").
 consola(pc, "What Remains of Edith Finch").
-consola(pc, "Pumpkin Panic").
+consola(pc, "Pumpkin panic").
 consola(pc, "No Man's Sky").
 consola(pc, "60 seconds").
 consola(pc, "Euro Truck Simulator").
@@ -169,7 +165,9 @@ consola(pc, "FIFA").
 consola(pc, "Backrooms").
 consola(pc, "Phasmaphobia").
 consola(pc, "FNAF").
-
+consola(pc, "Resident Evil Village").
+consola(pc, "Geometry Dash").
+consola(pc, "Sonic").
 
 
 %PS
@@ -191,6 +189,9 @@ consola(play,"NBA 2k24").
 consola(play,"Formula 1").
 consola(play,"The Last of Us").
 consola(play,"No Man's Sky").
+consola(play, "Resident Evil Village").
+consola(play, "Sonic").
+consola(play, "Crash Bandicoot").
 
 
 %XBOX
@@ -206,6 +207,9 @@ consola(xbox,"FIFA").
 consola(xbox,"Just Dance").
 consola(xbox,"Formula 1").
 consola(xbox,"NBA 2k24").
+consola(xbox, "Resident Evil Village").
+consola(xbox, "Sonic").
+consola(xbox, "Crash Bandicoot").
 
 
 %Juegos de mesa o de cartas
@@ -240,6 +244,9 @@ consola(movil,"Genshin Impact").
 consola(movil,"FIFA").
 consola(movil,"Dream League Soccer 2").
 consola(movil,"Granny").
+consola(movil, "Resident Evil Village").
+consola(movil, "Geometry Dash").
+consola(movil,"Mario Kart").
 
 %SWITCH
 consola(n_switch,"Fall Guys").
@@ -252,6 +259,9 @@ consola(n_switch,"Minecraft").
 consola(n_switch,"FIFA").
 consola(n_switch,"NBA 2k24").
 consola(n_switch,"Mario Bros").
+consola(n_switch, "Resident Evil Village").
+consola(n_switch, "Sonic").
+consola(n_switch,"Mario Kart").
 
 
 %categorias de preguntas
@@ -296,12 +306,11 @@ factorSorpresa(supervivencia, "Me retiro a un lugar escondido y espero a que aso
 factorSorpresa(accion, "No le doy oportunidad a pensar y ataco").
 factorSorpresa(multiplayer,"Pido ayuda a mi equipo/Lo derroto con mi equipo").
 factorSorpresa(estrategia,"Pido ayuda a mi equipo/Lo derroto con mi equipo").
-factorSorpresa(con_historia, "Cambio de ruta y me dirijo por otro camino").
+factorSorpresa(con_historia, "Lo sigo sin que me vea para ver que hace").
 factorSorpresa(aventura, "Cambio de ruta y me dirijo por otro camino").
 factorSorpresa(rpg, "Cambio de ruta y me dirijo por otro camino").
-factorSorpresa(simulacion, "Cambio de ruta y me dirijo por otro camino").
 factorSorpresa(deportes, "Pido ayuda a mi equipo/Lo derroto con mi equipo").
-factorSorpresa(plataformer, "No le doy oportunidad a pensar y ataco").
+factorSorpresa(plataformer, "Espero al momento justo para atacar").
 factorSorpresa(terror,"Me retiro a un lugar escondido y espero a que asome el enemigo").
 
 
@@ -313,9 +322,8 @@ expresion(estrategia, "Comunico todo movimiento a mi equipo").
 expresion(con_historia, "Prefiero no hablar mucho").
 expresion(aventura, "Prefiero no hablar mucho").
 expresion(rpg, "Comunico todo movimiento a mi equipo").
-expresion(simulacion, "Prefiero no hablar mucho").
-expresion(deportes, "Comunico todo movimiento a mi equipo").
-expresion(plataformer, "Prefiero no hablar mucho").
+expresion(deportes, "Todo el mundo se entera si gano o pierdo").
+expresion(plataformer, "Todo el mundo se entera si gano o pierdo").
 expresion(terror, "Solo por chat de texto").
 
 %Parte favorita

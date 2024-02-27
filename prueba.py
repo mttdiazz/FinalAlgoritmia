@@ -32,7 +32,7 @@ def consultaY(relacion,y,pl):
         res.append(final)
     return res
 
-def consultaANY(relacion,pl): #por si acaso
+def consultaANY(relacion,pl): 
     query=relacion + "(X,Y)"
     res=[]
     res_query=list(pl.query(query))
@@ -79,10 +79,10 @@ def ordenar_mas_apariciones(lista): #con automata
         if item in res:  #estado 1
             cant=aux[item]+1
             res.remove(item)
-            if cant>max:  #estado 3
+            if cant>max:  #sub-estado 1
                 index=0
                 max=cant
-            else:         #estado 4
+            else:         #sub-estado 2
                 referencia=list(aux.keys())[list(aux.values()).index(cant)]
                 index=res.index(referencia)
             res.insert(index,item)

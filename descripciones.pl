@@ -251,7 +251,8 @@ descripcion("Formula 1","https://www.formula1.com/en/gaming.html").
 
 
 descripcion("FIFA","Enjoy next-generation HyperMotion2 technology, women's club football, 
-                    \nmen's and women's FIFA World Cup™, cross-play functionality and much more.").
+                    \nmen's and women's FIFA World Cup™, cross-play functionality and 
+                    \nmuch more.").
 descripcion("FIFA","https://www.ea.com/es-es/games/fifa").
 
 descripcion("Just Dance","UNLEASH YOUR INNER DANCER! All it takes to turn any room into a crazy dancefloor 
@@ -323,6 +324,15 @@ descripcion("Granny","Granny keeps you locked in her house and she will not let 
                     \nWell, you can probably figure out what happens then.").
 descripcion("Granny","https://store.steampowered.com/app/962400/Granny/").
 
+descripcion("Resident Evil Village","The next generation of survival horror rises in the form of Resident Evil 
+                                    \nVillage. The all-new storyline begins as tragedy befalls Ethan Winters and 
+                                    \nhis wife Mia once again. Fight for survival as danger lurks around every 
+                                    \ncorner and help Ethan get his kidnapped daughter back.").
+descripcion("Resident Evil Village","https://www.residentevil.com/village/us/").
 
 
-
+descripcion("Geometry Dash","Jump and fly through danger in this rhythm-based action platformer!
+                            \nGet ready for an almost impossible challenge in the world of Geometry 
+                            \nDash. Push your skills to the limit as you jump, fly and fight your way 
+                            \nthrough dangerous passages and spikey obstacles.").
+descripcion("Geometry Dash","https://play.google.com/store/apps/details?id=com.robtopx.geometryjump&hl=es_AR&gl=US").
