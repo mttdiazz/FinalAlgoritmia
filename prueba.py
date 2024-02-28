@@ -73,7 +73,7 @@ def ordenar_mas_apariciones(lista): #con automata
                 index=0
                 max=cant
             else:         #sub-estado 2
-                get_index(resultado,aux,cant)
+                index=get_index(resultado,aux,cant)
             resultado.insert(index,item)
             aux[item]+=1
 
