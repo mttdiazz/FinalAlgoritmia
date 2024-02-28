@@ -3,9 +3,7 @@ from automata import AutomataNombre
 from welcome_GUI import get_name
 import tkinter as tk
 from tkinter import messagebox
-from tkinter import font
 from tkinter import ttk
-import operator
 import webbrowser
 
 #instalacion de pyswip
@@ -35,15 +33,6 @@ def consultaY(relacion,y,pl):
         res.append(final)
     return res
 
-def consultaANY(relacion,pl): 
-    query=relacion + "(X,Y)"
-    res=[]
-    res_query=list(pl.query(query))
-    for item in res_query:
-        final=[bytes_a_string(item["X"]),bytes_a_string(item["Y"])]   
-        res.append(final)
-    return res
-
 def consultaUnica(relacion,pl):   #relacion(X)
     query=relacion + "(X)"
     res_query=list(pl.query(query))
@@ -59,23 +48,20 @@ def eliminar_repetidos(lista):
         if item not in nueva:
             nueva.append(item)
     return nueva
+def get_index(lista,dicc,i):
+    valores=list(dicc.values())
+
+    while i not in valores and i>=0:
+        i-=1
+    if i!=0:
+        referencia=list(dicc.keys())[valores.index(i)]
+        index=lista.index(referencia)
+    else:
+        index=len(lista)
+    return index
 
 
-""" def ordenar_mas_apariciones(lista):
-    res=[]
-    aux={}
-    while len(lista)!=0:
-        item=lista[0]
-        cant=lista.count(item)
-        aux[item]=cant
-        while item in lista:
-            lista.remove(item)
-    aux=sorted(aux.items(), reverse=True,key=operator.itemgetter(1)) #ordenar el diccionario de mayor a menor
-    for juego in aux:
-        res.append(juego[0])
-    return res """
 def ordenar_mas_apariciones(lista): #con automata
-    
     resultado=[]
     aux={}
     max=1
@@ -87,16 +73,7 @@ def ordenar_mas_apariciones(lista): #con automata
                 index=0
                 max=cant
             else:         #sub-estado 2
-                valores=list(aux.values())
-                i=cant
-                while i not in valores and i>=0:
-                    i-=1
-                if i!=0:
-                    
-                    referencia=list(aux.keys())[valores.index(i)]
-                    index=resultado.index(referencia)
-                else:
-                    index=len(resultado)
+                get_index(resultado,aux,cant)
             resultado.insert(index,item)
             aux[item]+=1
 
@@ -106,6 +83,7 @@ def ordenar_mas_apariciones(lista): #con automata
     
     #aceptacion
     return resultado
+
 def open_link(event, link):
     webbrowser.open_new(link)
 
