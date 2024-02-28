@@ -12,7 +12,7 @@ def get_name(callback):
     root.title("Ingrese su nombre:")
 
     def on_closing():
-        root.quit()
+        root.destroy()
     
     root.protocol("WM_DELETE_WINDOW", on_closing)
 
